@@ -6,7 +6,7 @@
 #include "BME280_MOD-1022.h"
 
 const char* ssid = "OpenTechGroup";
-const char* password = "korkemwifi";
+const char* password = "";
 WiFiClient client; // All fucntions https://www.arduino.cc/en/Reference/WiFi & http://esp8266.github.io/Arduino/versions/2.0.0/doc/libraries.html#wifi-esp8266wifi-library
 //#define ledPin D9         // the onboard LED
 

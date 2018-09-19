@@ -5,18 +5,13 @@
 #include <ESP8266HTTPClient.h>
 #include "BME280_MOD-1022.h"
 
-const char* ssid = "OpenTechGroup";
+const char* ssid = "";
 const char* password = "";
-WiFiClient client; // All fucntions https://www.arduino.cc/en/Reference/WiFi & http://esp8266.github.io/Arduino/versions/2.0.0/doc/libraries.html#wifi-esp8266wifi-library
+WiFiClient client; 
 //#define ledPin D9         // the onboard LED
 
-unsigned long CO2Channel = 437367; //ThingSpeak ID
-const char * WriteAPIKey = "RAN3R07A1U514BNW"; //ThingSpeak Write API
-
-const char* host = "weatherstation.wunderground.com";
-const char* WUID    = "IASTANA15"; //Weather Underground ID
-const char* WUPASS  = "r3zba702"; //Weather Underground Password
-//float altitudepws = 1138.00;      //LOCAL Alitude of the PWS to get relative pressure
+unsigned long CO2Channel = 0; //ThingSpeak ID
+const char * WriteAPIKey = ""; //ThingSpeak Write API
 
 //unsigned long MyMillis = 600000; //600000 = 10 min
 unsigned long MyMillis = 60000; //in msec; 60000 = 60 sec = 1 min
